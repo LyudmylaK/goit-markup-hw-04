@@ -118,6 +118,14 @@ ul {
 .hero {
   background: #2e2f42;
   padding: 188px 0;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(./images/people-office.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
 }
 
 .hero .container {
@@ -214,6 +222,8 @@ ul {
 .team-item {
   background-color: #fff;
   border-radius: 0 0 4px 4px;
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
 .team-title {
@@ -241,6 +251,24 @@ ul {
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-align: center;
+  margin-bottom: 8px;
+}
+
+.link-list {
+  display: flex;
+  gap: 24px;
+
+  justify-content: center;
+}
+
+.link-list .soc-link {
+  background-color: #4d5ae5;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .team-section .container {
