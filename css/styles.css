@@ -81,6 +81,29 @@ ul {
   display: flex;
 }
 
+.header-nav .nav-link {
+  display: flex;
+  padding-bottom: 0;
+}
+
+.studio {
+  flex-direction: column;
+  gap: 20px;
+}
+
+.studio::after {
+  width: 48px;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #fff;
+  content: "";
+}
+
+.studio:hover::after {
+  background-color: #404bbf;
+  transform: translateY(1px);
+}
+
 .nav-link {
   font-weight: 500;
   line-height: 1.5;
@@ -214,6 +237,16 @@ ul {
   width: calc((100% - 3 * 24px) / 4);
 }
 
+.div-icon {
+  background-color: #f4f4fd;
+  display: flex;
+  justify-content: center;
+  padding: 24px 100px;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+
 .team-section {
   background: #f4f4fd;
   padding: 120px 0;
@@ -257,7 +290,6 @@ ul {
 .link-list {
   display: flex;
   gap: 24px;
-
   justify-content: center;
 }
 
@@ -271,6 +303,14 @@ ul {
   align-items: center;
 }
 
+.link-list .icon {
+  fill: #f4f4fd;
+}
+
+.link-list .soc-link:hover,
+.link-list .soc-link:focus {
+  background-color: #404bbf;
+}
 .team-section .container {
   justify-content: center;
   flex-direction: column;
@@ -336,6 +376,33 @@ ul {
   padding: 32px 16px;
 }
 
+.overlay {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
+  background-color: #4d5ae5;
+  padding: 40px 32px 164px 32px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 300px;
+  transform: translateY(150%);
+  transition: ease-in-out;
+}
+
+.item-overlay {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.item-overlay:hover .overlay {
+  transform: translateY(0);
+}
+
 .footer-info {
   padding: 100px 0;
   background: #2e2f42;
@@ -346,6 +413,13 @@ ul {
   letter-spacing: 0.02em;
   color: #f4f4fd;
   max-width: 264px;
+}
+
+.media-text {
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #fff;
 }
 
 .footer-logo .logo-part {
@@ -361,4 +435,23 @@ ul {
   max-width: 1158px;
   padding: 0 15px;
   margin: 0 auto;
+}
+
+.footer-media .soc-link {
+  background-color: #4d5ae5;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-media .icon {
+  fill: #f4f4fd;
+}
+
+.footer-media .soc-link:hover,
+.footer-media .soc-link:focus {
+  background-color: #31d0aa;
 }
