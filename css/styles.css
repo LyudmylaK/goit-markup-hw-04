@@ -87,7 +87,7 @@ ul {
   display: flex;
 }
 
-.studio {
+.nav-list .studio {
   position: relative;
   color: #404bbf;
 }
@@ -102,11 +102,6 @@ ul {
   left: 0;
   bottom: -1px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), transform;
-}
-
-.studio:hover::after {
-  background-color: #404bbf;
-  transform: translateY(0);
 }
 
 .nav-link {
